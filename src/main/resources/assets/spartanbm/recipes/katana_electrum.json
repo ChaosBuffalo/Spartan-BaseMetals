@@ -1,0 +1,1 @@
+{"pattern": ["  i", " i ", "h  "], "conditions": [{"ore_dict": "ingotElectrum", "type": "ore_dict_exists"}], "type": "minecraft:crafting_shaped", "result": {"item": "spartanbm:katana_electrum"}, "key": {"i": {"ore": "ingotElectrum", "type": "forge:ore_dict"}, "h": {"item": "spartanweaponry:material", "data": 0}}}

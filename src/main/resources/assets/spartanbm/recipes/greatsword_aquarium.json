@@ -1,0 +1,1 @@
+{"pattern": [" i ", "iii", "ihi"], "conditions": [{"ore_dict": "ingotAquarium", "type": "ore_dict_exists"}], "type": "minecraft:crafting_shaped", "result": {"item": "spartanbm:greatsword_aquarium"}, "key": {"i": {"ore": "ingotAquarium", "type": "forge:ore_dict"}, "h": {"item": "spartanweaponry:material", "data": 0}}}

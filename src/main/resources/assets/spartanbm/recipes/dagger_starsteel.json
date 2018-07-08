@@ -1,0 +1,1 @@
+{"pattern": ["i", "h"], "conditions": [{"ore_dict": "ingotStarsteel", "type": "ore_dict_exists"}], "type": "minecraft:crafting_shaped", "result": {"item": "spartanbm:dagger_starsteel"}, "key": {"i": {"ore": "ingotStarsteel", "type": "forge:ore_dict"}, "h": {"item": "spartanweaponry:material", "data": 0}}}

@@ -1,0 +1,1 @@
+{"pattern": ["ii", " h"], "conditions": [{"ore_dict": "ingotLead", "type": "ore_dict_exists"}], "type": "minecraft:crafting_shaped", "result": {"item": "spartanbm:warhammer_lead"}, "key": {"i": {"ore": "ingotLead", "type": "forge:ore_dict"}, "h": {"item": "spartanweaponry:material", "data": 0}}}

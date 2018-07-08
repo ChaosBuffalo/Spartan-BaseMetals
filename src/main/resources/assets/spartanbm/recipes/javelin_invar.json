@@ -1,0 +1,1 @@
+{"pattern": ["pi"], "conditions": [{"ore_dict": "ingotInvar", "type": "ore_dict_exists"}], "type": "minecraft:crafting_shaped", "result": {"item": "spartanbm:javelin_invar"}, "key": {"i": {"ore": "ingotInvar", "type": "forge:ore_dict"}, "p": {"item": "spartanweaponry:material", "data": 1}}}

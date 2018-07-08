@@ -1,0 +1,1 @@
+{"pattern": ["iii", "iii", " h "], "conditions": [{"ore_dict": "ingotAdamantine", "type": "ore_dict_exists"}], "type": "minecraft:crafting_shaped", "result": {"item": "spartanbm:hammer_adamantine"}, "key": {"i": {"ore": "ingotAdamantine", "type": "forge:ore_dict"}, "h": {"item": "spartanweaponry:material", "data": 0}}}

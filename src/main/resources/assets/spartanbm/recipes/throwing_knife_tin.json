@@ -1,0 +1,1 @@
+{"pattern": ["hi"], "conditions": [{"ore_dict": "ingotTin", "type": "ore_dict_exists"}], "type": "minecraft:crafting_shaped", "result": {"item": "spartanbm:throwing_knife_tin"}, "key": {"i": {"ore": "ingotTin", "type": "forge:ore_dict"}, "h": {"item": "spartanweaponry:material", "data": 0}}}
