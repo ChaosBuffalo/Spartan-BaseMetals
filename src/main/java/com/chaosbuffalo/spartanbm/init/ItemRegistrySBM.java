@@ -1,5 +1,7 @@
 package com.chaosbuffalo.spartanbm.init;
 
+import com.chaosbuffalo.spartanbm.CreativeTabSpartanBM;
+import com.chaosbuffalo.spartanbm.SpartanBM;
 import com.chaosbuffalo.spartanbm.item.*;
 import com.chaosbuffalo.spartanbm.utils;
 import com.mcmoddev.basemetals.data.MaterialNames;
@@ -106,7 +108,7 @@ public class ItemRegistrySBM {
 
         }
         for (Item it : item_set){
-            it.setCreativeTab(CreativeTabsSW.TAB_SW);
+            it.setCreativeTab(SpartanBM.creativeTab);
             ev.getRegistry().register(it);
         }
     }
