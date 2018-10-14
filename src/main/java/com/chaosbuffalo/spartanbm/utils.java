@@ -3,7 +3,7 @@ package com.chaosbuffalo.spartanbm;
 import com.mcmoddev.basemetals.data.MaterialNames;
 import com.mcmoddev.lib.material.MMDMaterial;
 import com.mcmoddev.lib.util.Oredicts;
-import com.oblivioussp.spartanweaponry.util.ToolMaterialEx;
+import com.oblivioussp.spartanweaponry.api.ToolMaterialEx;
 
 import javax.annotation.Nonnull;
 

@@ -6,7 +6,7 @@ import com.mcmoddev.basemetals.items.MMDToolEffects;
 import com.mcmoddev.lib.item.MMDItemHelper;
 import com.mcmoddev.lib.material.MMDMaterial;
 import com.oblivioussp.spartanweaponry.item.ItemJavelin;
-import com.oblivioussp.spartanweaponry.util.DamageHelper;
+import com.oblivioussp.spartanweaponry.api.DamageHelper;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
