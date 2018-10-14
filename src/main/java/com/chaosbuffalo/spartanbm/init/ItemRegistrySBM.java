@@ -104,6 +104,16 @@ public class ItemRegistrySBM {
             ItemSpartanBMJavelin javelin = new ItemSpartanBMJavelin("javelin_" + mat.getName(), mat);
             ModelRenderRegistry.addItemToRegistry(javelin, utils.spartanMatFromMMDMat(mat), "javelin_custom");
             item_set.add(javelin);
+            ItemSpartanBMBattleAxe battle_axe = new ItemSpartanBMBattleAxe("battle_axe_"+ mat.getName(), mat);
+            ModelRenderRegistry.addItemToRegistry(battle_axe, utils.spartanMatFromMMDMat(mat), "battle_axe_custom");
+            item_set.add(battle_axe);
+            ItemSpartanBMBoomerang boomerang = new ItemSpartanBMBoomerang("boomerang_"+ mat.getName(), mat);
+            ModelRenderRegistry.addItemToRegistry(boomerang, utils.spartanMatFromMMDMat(mat), "boomerang_custom");
+            item_set.add(boomerang);
+            ItemSpartanBMMace mace = new ItemSpartanBMMace("mace_"+ mat.getName(), mat);
+            ModelRenderRegistry.addItemToRegistry(mace, utils.spartanMatFromMMDMat(mat), "mace_custom");
+            item_set.add(mace);
+
 
 
         }
