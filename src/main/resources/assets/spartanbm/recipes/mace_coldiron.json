@@ -1,0 +1,1 @@
+{"pattern": [" ii", " si", "h  "], "conditions": [{"ore_dict": "ingotColdiron", "type": "ore_dict_exists"}], "type": "minecraft:crafting_shaped", "result": {"item": "spartanbm:mace_coldiron"}, "key": {"i": {"ore": "ingotColdiron", "type": "forge:ore_dict"}, "s": {"ore": "stickWood", "type": "forge:ore_dict"}, "h": {"item": "spartanweaponry:material", "data": 0}}}
