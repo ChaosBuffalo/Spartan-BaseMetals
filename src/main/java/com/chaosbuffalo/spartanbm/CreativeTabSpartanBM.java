@@ -10,6 +10,6 @@ public class CreativeTabSpartanBM extends CreativeTabs {
     public CreativeTabSpartanBM(String label) {super(label);}
 
     @Override
-    public ItemStack getTabIconItem(){return new ItemStack(Materials.getMaterialByName(MaterialNames.COPPER).getItem(Names.AXE));}
+    public ItemStack getTabIconItem(){return new ItemStack(Materials.getMaterialByName(MaterialNames.COPPER).getItem(Names.CROSSBOW));}
 
 }
