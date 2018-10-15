@@ -7,6 +7,7 @@ import com.chaosbuffalo.spartanbm.utils;
 import com.mcmoddev.basemetals.data.MaterialNames;
 import com.mcmoddev.basemetals.init.Materials;
 import com.mcmoddev.lib.material.MMDMaterial;
+import com.mcmoddev.lib.util.ConfigBase.Options;
 import com.oblivioussp.spartanweaponry.client.gui.CreativeTabsSW;
 import com.oblivioussp.spartanweaponry.init.ModelRenderRegistry;
 import com.oblivioussp.spartanweaponry.util.ConfigHandler;
@@ -27,23 +28,57 @@ public class ItemRegistrySBM {
     public static final Set<MMDMaterial> MATERIALS_TO_REGISTER = new HashSet<>();
 
     static {
-        MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.MITHRIL));
-        MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.OBSIDIAN));
-        MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.INVAR));
-        MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.COPPER));
-        MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.ADAMANTINE));
-        MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.BRONZE));
-        MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.BRASS));
-        MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.AQUARIUM));
-        MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.COLDIRON));
-        MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.ELECTRUM));
-        MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.NICKEL));
-        MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.LEAD));
-        MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.PLATINUM));
-        MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.SILVER));
-        MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.STARSTEEL));
-        MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.STEEL));
-        MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.TIN));
+        if (Options.isMaterialEnabled("mithril")) {
+            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.MITHRIL));
+        }
+        if (Options.isMaterialEnabled("obsidian")) {
+            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.OBSIDIAN));
+        }
+        if (Options.isMaterialEnabled("invar")) {
+            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.INVAR));
+        }
+        if (Options.isMaterialEnabled("copper")) {
+            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.COPPER));
+        }
+        if (Options.isMaterialEnabled("adamantine")) {
+            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.ADAMANTINE));
+        }
+        if (Options.isMaterialEnabled("bronze")) {
+            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.BRONZE));
+        }
+        if (Options.isMaterialEnabled("brass")) {
+            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.BRASS));
+        }
+        if (Options.isMaterialEnabled("aquarium")) {
+            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.AQUARIUM));
+        }
+        if (Options.isMaterialEnabled("coldiron")) {
+            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.COLDIRON));
+        }
+        if (Options.isMaterialEnabled("electrum")) {
+            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.ELECTRUM));
+        }
+        if (Options.isMaterialEnabled("nickel")) {
+            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.NICKEL));
+        }
+        if (Options.isMaterialEnabled("lead")) {
+            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.LEAD));
+        }
+        if (Options.isMaterialEnabled("platinum")) {
+            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.PLATINUM));
+        }
+        if (Options.isMaterialEnabled("silver")) {
+            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.SILVER));
+        }
+        if (Options.isMaterialEnabled("starsteel")) {
+            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.STARSTEEL));
+        }
+        if (Options.isMaterialEnabled("steel")) {
+            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.STEEL));
+        }
+        if (Options.isMaterialEnabled("tin")) {
+            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.TIN));
+        }
     }
 
 
