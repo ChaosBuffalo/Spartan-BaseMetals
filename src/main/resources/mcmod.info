@@ -1,16 +1,16 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
+  "modid": "spartanbm",
+  "name": "Spartan Base Metals",
+  "description": "Adds base metals compatibility to Spartan Weaponry",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["Kovak"],
+  "credits": "The Forge and FML guys, for making forge, Oblivious Spartan for making Spartan's Weaponry, and DShaldowWolf and Jriwanek for making Base Metals",
   "logoFile": "",
   "screenshots": [],
-  "dependencies": []
+  "dependencies": ["Base Metals", "Spartan Weaponry"]
 }
 ]
