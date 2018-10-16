@@ -190,11 +190,11 @@ public class ItemRegistrySBM {
                 ModelRenderRegistry.addItemToRegistry(mace, new ResourceLocation(SpartanBM.MODID, "mace_custom"), utils.spartanMatFromMMDMat(mat));
                 item_set.add(mace);
             }
-//            if (!ConfigHandler.disableParryingDagger){
-//                ItemSpartanBMParryingDagger parrying_dagger = new ItemSpartanBMParryingDagger("parrying_dagger_" + mat.getName(), mat);
-//                ModelRenderRegistry.addItemToRegistry(parrying_dagger, new ResourceLocation(SpartanBM.MODID, "parrying_dagger_custom"), utils.spartanMatFromMMDMat(mat));
-//                item_set.add(parrying_dagger);
-//            }
+            if (ConfigHandler.enableExperimentalWeapons && !ConfigHandler.disableParryingDagger){
+                ItemSpartanBMParryingDagger parrying_dagger = new ItemSpartanBMParryingDagger("parrying_dagger_" + mat.getName(), mat);
+                ModelRenderRegistry.addItemToRegistry(parrying_dagger, new ResourceLocation(SpartanBM.MODID, "parrying_dagger_custom"), utils.spartanMatFromMMDMat(mat));
+                item_set.add(parrying_dagger);
+            }
         }
         for (Item it : item_set){
             it.setCreativeTab(SpartanBM.creativeTab);
