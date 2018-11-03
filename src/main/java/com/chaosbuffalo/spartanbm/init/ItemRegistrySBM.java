@@ -28,44 +28,35 @@ public class ItemRegistrySBM {
     public static final Set<MMDMaterial> MATERIALS_TO_REGISTER = new HashSet<>();
 
     static {
-        if (Options.isMaterialEnabled("mithril")) {
-            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.MITHRIL));
-        }
-        if (Options.isMaterialEnabled("obsidian")) {
-            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.OBSIDIAN));
-        }
-        if (Options.isMaterialEnabled("invar")) {
-            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.INVAR));
-        }
-        if (Options.isMaterialEnabled("copper")) {
-            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.COPPER));
-        }
         if (Options.isMaterialEnabled("adamantine")) {
             MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.ADAMANTINE));
         }
-        if (Options.isMaterialEnabled("bronze")) {
-            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.BRONZE));
+        if (Options.isMaterialEnabled("antimony")){
+            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.ANTIMONY));
         }
-        if (Options.isMaterialEnabled("brass")) {
-            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.BRASS));
-        }
-        if (Options.isMaterialEnabled("aquarium")) {
-            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.AQUARIUM));
+        if (Options.isMaterialEnabled("bismuth")){
+            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.BISMUTH));
         }
         if (Options.isMaterialEnabled("coldiron")) {
             MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.COLDIRON));
         }
-        if (Options.isMaterialEnabled("electrum")) {
-            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.ELECTRUM));
-        }
-        if (Options.isMaterialEnabled("nickel")) {
-            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.NICKEL));
+        if (Options.isMaterialEnabled("copper")) {
+            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.COPPER));
         }
         if (Options.isMaterialEnabled("lead")) {
             MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.LEAD));
         }
+        if (Options.isMaterialEnabled("nickel")) {
+            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.NICKEL));
+        }
+        if (Options.isMaterialEnabled("obsidian")) {
+            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.OBSIDIAN));
+        }
         if (Options.isMaterialEnabled("platinum")) {
             MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.PLATINUM));
+        }
+        if (Options.isMaterialEnabled("quartz")){
+            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.QUARTZ));
         }
         if (Options.isMaterialEnabled("silver")) {
             MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.SILVER));
@@ -73,11 +64,38 @@ public class ItemRegistrySBM {
         if (Options.isMaterialEnabled("starsteel")) {
             MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.STARSTEEL));
         }
-        if (Options.isMaterialEnabled("steel")) {
-            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.STEEL));
-        }
         if (Options.isMaterialEnabled("tin")) {
             MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.TIN));
+        }
+        if (Options.isMaterialEnabled("zinc")){
+            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.ZINC));
+        }
+        if (Options.isMaterialEnabled("aquarium")) {
+            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.AQUARIUM));
+        }
+        if (Options.isMaterialEnabled("brass")) {
+            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.BRASS));
+        }
+        if (Options.isMaterialEnabled("bronze")) {
+            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.BRONZE));
+        }
+        if (Options.isMaterialEnabled("cupronickel")){
+            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.CUPRONICKEL));
+        }
+        if (Options.isMaterialEnabled("electrum")) {
+            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.ELECTRUM));
+        }
+        if (Options.isMaterialEnabled("invar")) {
+            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.INVAR));
+        }
+        if (Options.isMaterialEnabled("mithril")) {
+            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.MITHRIL));
+        }
+        if (Options.isMaterialEnabled("pewter")){
+            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.PEWTER));
+        }
+        if (Options.isMaterialEnabled("steel")) {
+            MATERIALS_TO_REGISTER.add(Materials.getMaterialByName(MaterialNames.STEEL));
         }
     }
 
