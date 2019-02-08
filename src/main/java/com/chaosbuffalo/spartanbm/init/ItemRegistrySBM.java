@@ -1,14 +1,32 @@
 package com.chaosbuffalo.spartanbm.init;
 
-import com.chaosbuffalo.spartanbm.CreativeTabSpartanBM;
 import com.chaosbuffalo.spartanbm.SpartanBM;
-import com.chaosbuffalo.spartanbm.item.*;
+import com.chaosbuffalo.spartanbm.item.ItemSpartanBMBattleAxe;
+import com.chaosbuffalo.spartanbm.item.ItemSpartanBMBoomerang;
+import com.chaosbuffalo.spartanbm.item.ItemSpartanBMCrossbow;
+import com.chaosbuffalo.spartanbm.item.ItemSpartanBMDagger;
+import com.chaosbuffalo.spartanbm.item.ItemSpartanBMGreatsword;
+import com.chaosbuffalo.spartanbm.item.ItemSpartanBMHalberd;
+import com.chaosbuffalo.spartanbm.item.ItemSpartanBMHammer;
+import com.chaosbuffalo.spartanbm.item.ItemSpartanBMJavelin;
+import com.chaosbuffalo.spartanbm.item.ItemSpartanBMKatana;
+import com.chaosbuffalo.spartanbm.item.ItemSpartanBMLance;
+import com.chaosbuffalo.spartanbm.item.ItemSpartanBMLongbow;
+import com.chaosbuffalo.spartanbm.item.ItemSpartanBMLongsword;
+import com.chaosbuffalo.spartanbm.item.ItemSpartanBMMace;
+import com.chaosbuffalo.spartanbm.item.ItemSpartanBMParryingDagger;
+import com.chaosbuffalo.spartanbm.item.ItemSpartanBMPike;
+import com.chaosbuffalo.spartanbm.item.ItemSpartanBMRapier;
+import com.chaosbuffalo.spartanbm.item.ItemSpartanBMSaber;
+import com.chaosbuffalo.spartanbm.item.ItemSpartanBMSpear;
+import com.chaosbuffalo.spartanbm.item.ItemSpartanBMThrowingAxe;
+import com.chaosbuffalo.spartanbm.item.ItemSpartanBMThrowingKnife;
+import com.chaosbuffalo.spartanbm.item.ItemSpartanBMWarhammer;
 import com.chaosbuffalo.spartanbm.utils;
 import com.mcmoddev.basemetals.data.MaterialNames;
 import com.mcmoddev.basemetals.init.Materials;
 import com.mcmoddev.lib.material.MMDMaterial;
 import com.mcmoddev.lib.util.ConfigBase.Options;
-import com.oblivioussp.spartanweaponry.client.gui.CreativeTabsSW;
 import com.oblivioussp.spartanweaponry.init.ModelRenderRegistry;
 import com.oblivioussp.spartanweaponry.util.ConfigHandler;
 import net.minecraft.item.Item;
@@ -18,6 +36,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Set;
 
 /**
@@ -25,7 +44,7 @@ import java.util.Set;
  */
 @Mod.EventBusSubscriber
 public class ItemRegistrySBM {
-    public static final Set<MMDMaterial> MATERIALS_TO_REGISTER = new HashSet<>();
+    public static final Set<MMDMaterial> MATERIALS_TO_REGISTER = new LinkedHashSet<>();
 
     static {
         if (Options.isMaterialEnabled("adamantine")) {
@@ -106,7 +125,7 @@ public class ItemRegistrySBM {
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> ev) {
-        Set<Item> item_set = new HashSet<>();
+        Set<Item> item_set = new LinkedHashSet<>();
         for (MMDMaterial mat : MATERIALS_TO_REGISTER){
             if (!ConfigHandler.disableKatana) {
                 ItemSpartanBMKatana katana = new ItemSpartanBMKatana("katana_" + mat.getName(), mat);
