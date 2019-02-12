@@ -197,12 +197,12 @@ public class ItemRegistrySBM {
                 ModelRenderRegistry.addItemToRegistry(throwing_knife, new ResourceLocation(SpartanBM.MODID, "throwing_knife_custom"), utils.spartanMatFromMMDMat(mat));
                 item_set.add(throwing_knife);
             }
-            if (!ConfigHandler.disableLongbow) {
+            if (!ConfigHandler.disableLongbow || ConfigHandler.woodenLongbowOnly) {
                 ItemSpartanBMLongbow longbow = new ItemSpartanBMLongbow("longbow_" + mat.getName(), mat);
                 ModelRenderRegistry.addItemToRegistry(longbow, new ResourceLocation(SpartanBM.MODID, "longbow_custom"), utils.spartanMatFromMMDMat(mat));
                 item_set.add(longbow);
             }
-            if (!ConfigHandler.disableCrossbow) {
+            if (!ConfigHandler.disableCrossbow|| ConfigHandler.woodenCrossbowOnly) {
                 ItemSpartanBMCrossbow crossbow = new ItemSpartanBMCrossbow("crossbow_" + mat.getName(), mat);
                 ModelRenderRegistry.addItemToRegistry(crossbow, new ResourceLocation(SpartanBM.MODID, "crossbow_custom"), utils.spartanMatFromMMDMat(mat));
                 item_set.add(crossbow);
@@ -217,7 +217,7 @@ public class ItemRegistrySBM {
                 ModelRenderRegistry.addItemToRegistry(battle_axe, new ResourceLocation(SpartanBM.MODID, "battle_axe_custom"), utils.spartanMatFromMMDMat(mat));
                 item_set.add(battle_axe);
             }
-            if (!ConfigHandler.disableBoomerang) {
+            if (!ConfigHandler.disableBoomerang || ConfigHandler.woodenBoomerangOnly) {
                 ItemSpartanBMBoomerang boomerang = new ItemSpartanBMBoomerang("boomerang_" + mat.getName(), mat);
                 ModelRenderRegistry.addItemToRegistry(boomerang, new ResourceLocation(SpartanBM.MODID, "boomerang_custom"), utils.spartanMatFromMMDMat(mat));
                 item_set.add(boomerang);
