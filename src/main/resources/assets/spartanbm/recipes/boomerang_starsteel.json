@@ -1,0 +1,1 @@
+{"pattern": ["iww", "w  ", "w  "], "conditions": [{"ore_dict": "ingotStarsteel", "type": "ore_dict_exists"}], "type": "minecraft:crafting_shaped", "result": {"item": "spartanbm:boomerang_starsteel"}, "key": {"i": {"ore": "ingotStarsteel", "type": "forge:ore_dict"}, "w": {"ore": "plankWood", "type": "forge:ore_dict"}}}

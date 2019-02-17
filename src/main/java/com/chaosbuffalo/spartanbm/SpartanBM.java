@@ -1,5 +1,6 @@
 package com.chaosbuffalo.spartanbm;
 
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -12,7 +13,7 @@ public class SpartanBM
 {
     public static final String MODID = "spartanbm";
     public static final String NAME = "SpartanWeaponry-BaseMetals";
-    public static final String VERSION = "0.1";
+    public static final String VERSION = "@VERSION@";
 
     private static Logger logger;
 
@@ -27,4 +28,6 @@ public class SpartanBM
     {
 
     }
+
+    public static final CreativeTabs creativeTab = new CreativeTabSpartanBM(MODID);
 }

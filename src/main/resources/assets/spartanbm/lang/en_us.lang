@@ -34,8 +34,16 @@ material.spartanbm:mithril=Mithril
 material.spartanbm:obsidian=Obsidian
 material.spartanbm:adamantine=Adamantine
 material.spartanbm:coldiron=Cold-Iron
+material.spartanbm:antimony=Antimony
+material.spartanbm:bismuth=Bismuth
 material.spartanbm:aquarium=Aquarium
+material.spartanbm:quartz=Quartz
+material.spartanbm:zinc=Zinc
 material.spartanbm:brass=Brass
+material.spartanbm:cupronickel=Cupronickel
+material.spartanbm:pewter=Pewter
 material.spartanbm:starsteel=Star-Steel
+
+itemGroup.spartanbm=Spartan Base Metals
 
 
