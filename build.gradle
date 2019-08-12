@@ -42,11 +42,14 @@ repositories {
 
 dependencies {
     compile fileTree(dir: 'libs', include: '*.jar')
-    deobfCompile "spartan-weaponry:SpartanWeaponry-1.12.2:beta:1.2.3"
+    deobfCompile "spartan-weaponry:SpartanWeaponry-1.12.2:beta:1.3.0"
     deobfProvided "com.mcmoddev:OreSpawn:${mc_version}-${orespawn_version}"
     runtime "com.mcmoddev:OreSpawn:${mc_version}-${orespawn_version}"
     deobfProvided "com.mcmoddev:BaseMetals:${mc_version}-${bme_version}"
     runtime "com.mcmoddev:BaseMetals:${mc_version}-${bme_version}"
+    deobfProvided("com.mcmoddev:MMDLib:${mc_version}-${mmdlib_version}") {
+        exclude group: 'mezz.jei'
+    }
 }
 
 processResources {

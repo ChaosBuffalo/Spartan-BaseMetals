@@ -1,27 +1,7 @@
 package com.chaosbuffalo.spartanbm.init;
 
 import com.chaosbuffalo.spartanbm.SpartanBM;
-import com.chaosbuffalo.spartanbm.item.ItemSpartanBMBattleAxe;
-import com.chaosbuffalo.spartanbm.item.ItemSpartanBMBoomerang;
-import com.chaosbuffalo.spartanbm.item.ItemSpartanBMCrossbow;
-import com.chaosbuffalo.spartanbm.item.ItemSpartanBMDagger;
-import com.chaosbuffalo.spartanbm.item.ItemSpartanBMGreatsword;
-import com.chaosbuffalo.spartanbm.item.ItemSpartanBMHalberd;
-import com.chaosbuffalo.spartanbm.item.ItemSpartanBMHammer;
-import com.chaosbuffalo.spartanbm.item.ItemSpartanBMJavelin;
-import com.chaosbuffalo.spartanbm.item.ItemSpartanBMKatana;
-import com.chaosbuffalo.spartanbm.item.ItemSpartanBMLance;
-import com.chaosbuffalo.spartanbm.item.ItemSpartanBMLongbow;
-import com.chaosbuffalo.spartanbm.item.ItemSpartanBMLongsword;
-import com.chaosbuffalo.spartanbm.item.ItemSpartanBMMace;
-import com.chaosbuffalo.spartanbm.item.ItemSpartanBMParryingDagger;
-import com.chaosbuffalo.spartanbm.item.ItemSpartanBMPike;
-import com.chaosbuffalo.spartanbm.item.ItemSpartanBMRapier;
-import com.chaosbuffalo.spartanbm.item.ItemSpartanBMSaber;
-import com.chaosbuffalo.spartanbm.item.ItemSpartanBMSpear;
-import com.chaosbuffalo.spartanbm.item.ItemSpartanBMThrowingAxe;
-import com.chaosbuffalo.spartanbm.item.ItemSpartanBMThrowingKnife;
-import com.chaosbuffalo.spartanbm.item.ItemSpartanBMWarhammer;
+import com.chaosbuffalo.spartanbm.item.*;
 import com.chaosbuffalo.spartanbm.utils;
 import com.mcmoddev.basemetals.data.MaterialNames;
 import com.mcmoddev.basemetals.init.Materials;
@@ -228,9 +208,22 @@ public class ItemRegistrySBM {
                 item_set.add(mace);
             }
             if (ConfigHandler.enableExperimentalWeapons && !ConfigHandler.disableParryingDagger){
-                ItemSpartanBMParryingDagger parrying_dagger = new ItemSpartanBMParryingDagger("parrying_dagger_" + mat.getName(), mat);
+                ItemSpartanBMParryingDagger parrying_dagger = new ItemSpartanBMParryingDagger(
+                        "parrying_dagger_" + mat.getName(), mat);
                 ModelRenderRegistry.addItemToRegistry(parrying_dagger, new ResourceLocation(SpartanBM.MODID, "parrying_dagger_custom"), utils.spartanMatFromMMDMat(mat));
                 item_set.add(parrying_dagger);
+            }
+            if (!ConfigHandler.disableQuarterstaff){
+                ItemSpartanBMQuarterstaff quarterstaff = new ItemSpartanBMQuarterstaff(
+                        "staff_" + mat.getName(), mat);
+                ModelRenderRegistry.addItemToRegistry(quarterstaff, new ResourceLocation(SpartanBM.MODID, "staff_custom"), utils.spartanMatFromMMDMat(mat));
+                item_set.add(quarterstaff);
+            }
+            if (!ConfigHandler.disableGlaive){
+                ItemSpartanBMGlaive glaive = new ItemSpartanBMGlaive(
+                        "glaive_" + mat.getName(), mat);
+                ModelRenderRegistry.addItemToRegistry(glaive, new ResourceLocation(SpartanBM.MODID, "glaive_custom"), utils.spartanMatFromMMDMat(mat));
+                item_set.add(glaive);
             }
         }
         for (Item it : item_set){

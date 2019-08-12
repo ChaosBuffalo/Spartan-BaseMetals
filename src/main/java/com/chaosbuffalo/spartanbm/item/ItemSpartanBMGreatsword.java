@@ -23,8 +23,7 @@ public class ItemSpartanBMGreatsword extends ItemGreatsword {
     private final MMDMaterial mmd_mat;
 
     public ItemSpartanBMGreatsword(String unlocName, MMDMaterial material) {
-        super(unlocName, SpartanBM.MODID, utils.spartanMatFromMMDMat(material),
-                DamageHelper.getDamage(DamageHelper.WeaponType.GREATSWORD, material.getBaseAttackDamage()));
+        super(unlocName, SpartanBM.MODID, utils.spartanMatFromMMDMat(material));
         mmd_mat = material;
 
     }

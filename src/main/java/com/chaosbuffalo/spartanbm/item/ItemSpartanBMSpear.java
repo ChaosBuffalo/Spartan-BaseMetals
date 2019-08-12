@@ -23,8 +23,7 @@ public class ItemSpartanBMSpear extends ItemSpear {
     private final MMDMaterial mmd_mat;
 
     public ItemSpartanBMSpear(String unlocName, MMDMaterial material) {
-        super(unlocName, SpartanBM.MODID, utils.spartanMatFromMMDMat(material),
-                DamageHelper.getDamage(DamageHelper.WeaponType.SPEAR, material.getBaseAttackDamage()));
+        super(unlocName, SpartanBM.MODID, utils.spartanMatFromMMDMat(material));
         mmd_mat = material;
 
     }

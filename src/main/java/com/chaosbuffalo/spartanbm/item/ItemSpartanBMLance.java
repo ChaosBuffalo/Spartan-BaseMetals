@@ -23,8 +23,7 @@ public class ItemSpartanBMLance extends ItemLance {
     private final MMDMaterial mmd_mat;
 
     public ItemSpartanBMLance(String unlocName, MMDMaterial material) {
-        super(unlocName, SpartanBM.MODID, utils.spartanMatFromMMDMat(material),
-                DamageHelper.getDamage(DamageHelper.WeaponType.LANCE, material.getBaseAttackDamage()));
+        super(unlocName, SpartanBM.MODID, utils.spartanMatFromMMDMat(material));
         mmd_mat = material;
 
     }

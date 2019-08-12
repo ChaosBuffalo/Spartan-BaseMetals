@@ -18,6 +18,8 @@ item.spartanbm:crossbow_custom.name=%s-Strengthened Crossbow
 item.spartanbm:throwing_knife_custom.name=%s Throwing Knife
 item.spartanbm:throwing_axe_custom.name=%s Throwing Axe
 item.spartanbm:javelin_custom.name=%s Javelin
+item.spartanbm:staff_custom.name=%s Quarterstaff
+item.spartanbm:glaive_custom.name=%s Glaive
 
 #Materials
 material.spartanbm:copper=Copper

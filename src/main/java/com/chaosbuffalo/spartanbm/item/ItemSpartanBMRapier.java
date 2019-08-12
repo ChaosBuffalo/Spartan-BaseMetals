@@ -23,8 +23,7 @@ public class ItemSpartanBMRapier extends ItemRapier {
     private final MMDMaterial mmd_mat;
 
     public ItemSpartanBMRapier(String unlocName, MMDMaterial material) {
-        super(unlocName, SpartanBM.MODID, utils.spartanMatFromMMDMat(material),
-                DamageHelper.getDamage(DamageHelper.WeaponType.RAPIER, material.getBaseAttackDamage()));
+        super(unlocName, SpartanBM.MODID, utils.spartanMatFromMMDMat(material));
         mmd_mat = material;
 
     }

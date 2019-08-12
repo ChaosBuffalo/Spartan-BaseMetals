@@ -1,0 +1,1 @@
+{"pattern": [" i ", " i ", "ip "], "conditions": [{"ore_dict": "ingotMithril", "type": "spartanbm:ore_dict_exists"}], "type": "minecraft:crafting_shaped", "result": {"item": "spartanbm:glaive_mithril"}, "key": {"i": {"ore": "ingotMithril", "type": "forge:ore_dict"}, "p": {"item": "spartanweaponry:material", "data": 1}}}

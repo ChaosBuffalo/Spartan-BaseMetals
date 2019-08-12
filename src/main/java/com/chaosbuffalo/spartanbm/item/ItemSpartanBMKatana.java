@@ -24,8 +24,7 @@ public class ItemSpartanBMKatana extends ItemKatana {
     private final MMDMaterial mmd_mat;
 
     public ItemSpartanBMKatana(String unlocName, MMDMaterial material) {
-        super(unlocName, SpartanBM.MODID, utils.spartanMatFromMMDMat(material),
-                DamageHelper.getDamage(DamageHelper.WeaponType.KATANA, material.getBaseAttackDamage()));
+        super(unlocName, SpartanBM.MODID, utils.spartanMatFromMMDMat(material));
         mmd_mat = material;
 
     }

@@ -1,0 +1,1 @@
+{"pattern": [" p ", " i ", "   "], "conditions": [{"ore_dict": "ingotCopper", "type": "spartanbm:ore_dict_exists"}], "type": "minecraft:crafting_shaped", "result": {"item": "spartanbm:staff_copper"}, "key": {"i": {"ore": "ingotCopper", "type": "forge:ore_dict"}, "p": {"item": "spartanweaponry:material", "data": 1}}}

@@ -20,8 +20,7 @@ public class ItemSpartanBMBoomerang extends ItemBoomerang {
     private final MMDMaterial mmd_mat;
 
     public ItemSpartanBMBoomerang(String unlocName, MMDMaterial material) {
-        super(unlocName, SpartanBM.MODID, utils.spartanMatFromMMDMat(material),
-                DamageHelper.getDamage(DamageHelper.WeaponType.BOOMERANG, material.getBaseAttackDamage()));
+        super(unlocName, SpartanBM.MODID, utils.spartanMatFromMMDMat(material));
         mmd_mat = material;
 
     }

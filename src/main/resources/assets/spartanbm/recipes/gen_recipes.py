@@ -28,7 +28,7 @@ def gen_katana_recipe_for_mat(mat_name):
         },
     "conditions": [
             {
-            "type": "ore_dict_exists",
+            "type": "spartanbm:ore_dict_exists",
             "ore_dict": "ingot" + mat_name.capitalize()
             }
         ]
@@ -59,7 +59,7 @@ def gen_greatsword_recipe(mat_name):
             },
             "conditions": [
                 {
-                    "type": "ore_dict_exists",
+                    "type": "spartanbm:ore_dict_exists",
                     "ore_dict": "ingot" + mat_name.capitalize()
                 }
             ]
@@ -90,7 +90,7 @@ def gen_longsword_recipe(mat_name):
             },
             "conditions": [
                 {
-                    "type": "ore_dict_exists",
+                    "type": "spartanbm:ore_dict_exists",
                     "ore_dict": "ingot" + mat_name.capitalize()
                 }
             ]
@@ -121,7 +121,7 @@ def gen_saber_recipe(mat_name):
             },
             "conditions": [
                 {
-                    "type": "ore_dict_exists",
+                    "type": "spartanbm:ore_dict_exists",
                     "ore_dict": "ingot" + mat_name.capitalize()
                 }
             ]
@@ -152,7 +152,7 @@ def gen_rapier_recipe(mat_name):
             },
             "conditions": [
                 {
-                    "type": "ore_dict_exists",
+                    "type": "spartanbm:ore_dict_exists",
                     "ore_dict": "ingot" + mat_name.capitalize()
                 }
             ]
@@ -182,7 +182,7 @@ def gen_spear_recipe(mat_name):
             },
             "conditions": [
                 {
-                    "type": "ore_dict_exists",
+                    "type": "spartanbm:ore_dict_exists",
                     "ore_dict": "ingot" + mat_name.capitalize()
                 }
             ]
@@ -212,7 +212,7 @@ def gen_dagger_recipe(mat_name):
             },
             "conditions": [
                 {
-                    "type": "ore_dict_exists",
+                    "type": "spartanbm:ore_dict_exists",
                     "ore_dict": "ingot" + mat_name.capitalize()
                 }
             ]
@@ -243,7 +243,7 @@ def gen_pike_recipe(mat_name):
             },
             "conditions": [
                 {
-                    "type": "ore_dict_exists",
+                    "type": "spartanbm:ore_dict_exists",
                     "ore_dict": "ingot" + mat_name.capitalize()
                 }
             ]
@@ -278,7 +278,7 @@ def gen_lance_recipe(mat_name):
             },
             "conditions": [
                 {
-                    "type": "ore_dict_exists",
+                    "type": "spartanbm:ore_dict_exists",
                     "ore_dict": "ingot" + mat_name.capitalize()
                 }
             ]
@@ -309,7 +309,7 @@ def gen_halberd_recipe(mat_name):
             },
             "conditions": [
                 {
-                    "type": "ore_dict_exists",
+                    "type": "spartanbm:ore_dict_exists",
                     "ore_dict": "ingot" + mat_name.capitalize()
                 }
             ]
@@ -339,7 +339,7 @@ def gen_warhammer_recipe(mat_name):
             },
             "conditions": [
                 {
-                    "type": "ore_dict_exists",
+                    "type": "spartanbm:ore_dict_exists",
                     "ore_dict": "ingot" + mat_name.capitalize()
                 }
             ]
@@ -369,7 +369,7 @@ def gen_throwing_axe_recipe(mat_name):
             },
             "conditions": [
                 {
-                    "type": "ore_dict_exists",
+                    "type": "spartanbm:ore_dict_exists",
                     "ore_dict": "ingot" + mat_name.capitalize()
                 }
             ]
@@ -400,7 +400,7 @@ def gen_hammer_recipe(mat_name):
             },
             "conditions": [
                 {
-                    "type": "ore_dict_exists",
+                    "type": "spartanbm:ore_dict_exists",
                     "ore_dict": "ingot" + mat_name.capitalize()
                 }
             ]
@@ -429,7 +429,7 @@ def gen_throwing_knife_recipe(mat_name):
             },
             "conditions": [
                 {
-                    "type": "ore_dict_exists",
+                    "type": "spartanbm:ore_dict_exists",
                     "ore_dict": "ingot" + mat_name.capitalize()
                 }
             ]
@@ -468,7 +468,7 @@ def gen_longbow_recipe(mat_name):
             },
             "conditions": [
                 {
-                    "type": "ore_dict_exists",
+                    "type": "spartanbm:ore_dict_exists",
                     "ore_dict": "ingot" + mat_name.capitalize()
                 }
             ]
@@ -510,7 +510,7 @@ def gen_crossbow_recipe(mat_name):
             },
             "conditions": [
                 {
-                    "type": "ore_dict_exists",
+                    "type": "spartanbm:ore_dict_exists",
                     "ore_dict": "ingot" + mat_name.capitalize()
                 }
             ]
@@ -539,13 +539,75 @@ def gen_javelin_recipe(mat_name):
             },
             "conditions": [
                 {
-                    "type": "ore_dict_exists",
+                    "type": "spartanbm:ore_dict_exists",
                     "ore_dict": "ingot" + mat_name.capitalize()
                 }
             ]
         }
     with open('javelin_' + mat_name + '.json', 'w') as outfile:
-        json.dump(gen_dict, outfile) 
+        json.dump(gen_dict, outfile)
+
+def gen_quarterstaff_recipe(mat_name):
+    gen_dict = {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+            " p ",
+            " i ",
+            "   "
+        ],
+        "key": {
+            "i": {
+                "type": "forge:ore_dict",
+                "ore": "ingot" + mat_name.capitalize()
+            },
+            "p": {
+                "item": "spartanweaponry:material",
+                "data": 1
+            },
+        },
+        "result": {
+            "item": "spartanbm:staff_" + mat_name
+        },
+        "conditions": [
+            {
+                "type": "spartanbm:ore_dict_exists",
+                "ore_dict": "ingot" + mat_name.capitalize()
+            }
+        ]
+    }
+    with open('staff_' + mat_name + '.json', 'w') as outfile:
+        json.dump(gen_dict, outfile)
+
+def gen_glaive_recipe(mat_name):
+    gen_dict = {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+            " i ",
+            " i ",
+            "ip "
+        ],
+        "key": {
+            "i": {
+                "type": "forge:ore_dict",
+                "ore": "ingot" + mat_name.capitalize()
+            },
+            "p": {
+                "item": "spartanweaponry:material",
+                "data": 1
+            },
+        },
+        "result": {
+            "item": "spartanbm:glaive_" + mat_name
+        },
+        "conditions": [
+            {
+                "type": "spartanbm:ore_dict_exists",
+                "ore_dict": "ingot" + mat_name.capitalize()
+            }
+        ]
+    }
+    with open('glaive_' + mat_name + '.json', 'w') as outfile:
+        json.dump(gen_dict, outfile)
 
 for each in mat_names:
     gen_katana_recipe_for_mat(each)
@@ -565,3 +627,5 @@ for each in mat_names:
     gen_longbow_recipe(each)
     gen_crossbow_recipe(each)
     gen_javelin_recipe(each)
+    gen_glaive_recipe(each)
+    gen_quarterstaff_recipe(each)

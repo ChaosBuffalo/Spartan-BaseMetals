@@ -23,8 +23,7 @@ public class ItemSpartanBMWarhammer extends ItemWarhammer {
     private final MMDMaterial mmd_mat;
 
     public ItemSpartanBMWarhammer(String unlocName, MMDMaterial material) {
-        super(unlocName, SpartanBM.MODID, utils.spartanMatFromMMDMat(material),
-                DamageHelper.getDamage(DamageHelper.WeaponType.WARHAMMER, material.getBaseAttackDamage()));
+        super(unlocName, SpartanBM.MODID, utils.spartanMatFromMMDMat(material));
         mmd_mat = material;
 
     }

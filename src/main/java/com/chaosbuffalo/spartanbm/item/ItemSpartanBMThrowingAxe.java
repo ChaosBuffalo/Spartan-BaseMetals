@@ -23,8 +23,7 @@ public class ItemSpartanBMThrowingAxe  extends ItemThrowingAxe {
     private final MMDMaterial mmd_mat;
 
     public ItemSpartanBMThrowingAxe(String unlocName, MMDMaterial material) {
-        super(unlocName, SpartanBM.MODID, utils.spartanMatFromMMDMat(material),
-                DamageHelper.getDamage(DamageHelper.WeaponType.THROWING_AXE, material.getBaseAttackDamage()));
+        super(unlocName, SpartanBM.MODID, utils.spartanMatFromMMDMat(material));
         mmd_mat = material;
 
     }
